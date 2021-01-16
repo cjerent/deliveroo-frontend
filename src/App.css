@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+/*MAIN*/
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 32px;
+  line-height: 26.7px;
+  font-weight: 600;
+  color: #2e3333;
+  margin: 9.6px 0 32px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 20px 0;
+  color: #2e3333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: 18px;
+  line-height: 15.6px;
+  color: #2e3333;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/*HEADERTOP*/
+
+.header-top {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e9ebeb;
+  box-sizing: border-box;
+}
+
+.header-top img {
+  height: 55px;
+  width: 154.86px;
+  object-fit: cover;
+}
+
+/*HEADERBOTTOM*/
+
+.header-bottom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  padding: 30px 0;
+}
+.header-bottom img {
+  width: 350px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.description {
+  margin-right: 30px;
+}
+.description p {
+  margin: 19.2px 0;
+  font-size: 19px;
+  line-height: 28.8px;
+  color: #868a8a;
+  font-weight: normal;
 }
 
-.App-link {
-  color: #61dafb;
+/*CATEGORIES*/
+
+.grey {
+  width: 1648px;
+  height: 4500px;
+  background-color: #f3f5f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-container {
+  height: 100%;
+  width: 820px;
+  margin-bottom: 40px;
+}
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.meal-box {
+  height: 160px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.meal-box:hover {
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+}
+
+.meal-box p {
+  font-size: 14px;
+  line-height: 20.8px;
+  color: #808484;
+}
+
+.meals-picture img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.overflow {
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 17px;
+  line-height: 14.7px;
+  color: #808484;
+}
+
+.popular {
+  font-size: 14px;
+  line-height: 10.7px;
+  color: #ff8000;
+  font-weight: 900;
+  margin-left: 20px;
 }
